@@ -1,4 +1,8 @@
+
 class User {
+  // The constructor method is a special method for creating and 
+  // initializing an object created with a class.
+  // A constructor can use the super keyword to call the constructor of the super class.
   constructor(email, name) {
     this.email = email
     this.name = name
