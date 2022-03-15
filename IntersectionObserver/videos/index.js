@@ -47,7 +47,7 @@ const videoList = [
 
   const mappedVideos = videoList.map((video, index) => {
   return `<div class="video-card" key=${index}>
-               <video autoplay src=${video.src} muted controls height="500" width="700" autoplay="false" playsinline loop preload="none"/>
+               <video autoplay muted src=${video.src} controls height="300" width="700" autoplay="false" playsinline loop preload="none"/>
           </div>`
   })
 
@@ -64,10 +64,13 @@ const videoList = [
     isMuted = false
     videos.forEach(vid => {
       console.log()
-      if (isMuted) return
-      vid.muted = !vid.muted
+      // if (isMuted) return
+      // vid.muted = !vid.muted
     })
   }
+
+    document.dispatchEvent(new KeyboardEvent('keypress'));
+
 
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -96,6 +99,9 @@ const videoList = [
             //   // video.target.load();
             // }
 
+              // video.target.muted = true
+              // video.target.play()
+              // video.target.muted = false
               video.target.play()
               // console.log("video.", video.target.muted)
               // video.target.muted = !video.target.muted
@@ -109,7 +115,8 @@ const videoList = [
         });
       }, {
         threshold: 1,
-        rootMargin: "100px"
+        rootMargin: "-250px 0px 0px 0px",
+        
       });
 
       lazyVideos.forEach(function(lazyVideo) {
