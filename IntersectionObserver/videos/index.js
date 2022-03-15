@@ -47,7 +47,7 @@ const videoList = [
 
   const mappedVideos = videoList.map((video, index) => {
   return `<div class="video-card" key=${index}>
-               <video autoplay src=${video.src} controls height="500" width="700" autoplay="false" playsinline loop preload="none"/>
+               <video autoplay src=${video.src} muted controls height="500" width="700" autoplay="false" playsinline loop preload="none"/>
           </div>`
   })
 
@@ -97,9 +97,8 @@ const videoList = [
             // }
 
               video.target.play()
-              video.target.click()
-              console.log("video.", video.target.muted)
-              video.target.muted = !video.target.muted
+              // console.log("video.", video.target.muted)
+              // video.target.muted = !video.target.muted
 
             
             // video.target.classList.remove("lazy");
@@ -121,3 +120,4 @@ const videoList = [
 
 
   // https://web.dev/lazy-loading-video/
+  // https://stackoverflow.com/questions/39041960/how-to-unmute-html5-video-with-a-muted-prop
