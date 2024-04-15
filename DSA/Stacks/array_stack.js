@@ -1,10 +1,11 @@
 /**
  * Implementing stack using arrays for palindrome
- * Palindrome - A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward. For example, "radar"
+ * Palindrome - A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward. 
+ * For example, "radar"
  */
 
 let letters = [];
-let word = "racecar";
+let word = "racecarr";
 
 let rword = "";
 
