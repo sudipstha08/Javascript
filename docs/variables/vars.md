@@ -10,16 +10,17 @@
 - `Reassignable`: Variables declared with var can be reassigned and re-declared within the same scope.
 - `No Block Scope`: Unlike let and const, var does not have block scope. Variables declared with var are visible throughout the function, even outside of conditional blocks
   ```js
-  function example() {
-  if (true) {
-    var x = 10;
-    console.log(x); // Output: 10
-  }
-  console.log(x); // Output: 10
+    function example() {
+      if (true) {
+        var x = 10;
+        console.log(x); // Output: 10
+      }
+      console.log(x); // Output: 10
     }
 
-  example()
+    example()
   ```
+
   In this example, the variable x is declared using var. It has a function scope, so it is accessible both inside and outside the if block. This behaviour is known as hoisting, where the variable declaration is moved to the top of the function. Therefore, even though x is declared inside the if block, it can still be accessed outside of it.
 
 ### Let
@@ -38,6 +39,7 @@
 
   example();
 ```
+
 In this example, the variable y is declared using let. It has block scope, which means it is only accessible within the block it's declared in (inside the if block). When we try to access y outside of the block, we get a ReferenceError because y is not defined in that scope. This behaviour helps prevent unintended variable leakage and makes the code easier to understand.
 
 ### Const
@@ -46,13 +48,14 @@ In this example, the variable y is declared using let. It has block scope, which
 - `Constant Value`: Variables declared with const must be assigned a value at the time of declaration, and that value cannot be changed afterward.
 - `Reassignment Forbidden`: Variables declared with const cannot be reassigned or re-declared within the same scope.
   ```js
-  function example() {
-  const z = 30;
-  console.log(z); // Output: 30
+    function example() {
+      const z = 30;
+      console.log(z); // Output: 30
 
-  z = 40; // TypeError: Assignment to constant variable
-}
+      z = 40; // TypeError: Assignment to constant variable
+    }
 
-example();
+    example();
   ```
+  
   In this example, the variable z is declared using const. It is also block-scoped like let. However, the difference is that const variables cannot be reassigned once they are assigned a value. In the example, when we try to assign a new value to z, we get a TypeError because we are trying to modify a constant variable. This behaviour ensures that the value of z remains constant throughout the code, promoting immutability and preventing accidental changes.
