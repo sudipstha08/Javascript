@@ -38,7 +38,6 @@ console.log(w);
 console.log(x);
 console.log(y);
 console.log(z);
-
 ```
 
 Boolean to Number
