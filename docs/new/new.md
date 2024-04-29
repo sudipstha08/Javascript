@@ -1,5 +1,5 @@
 ## New
-- The new operator lets developers create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
+- The `new` operator lets developers create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
   
 ```js
     function Car(make, model, year) {
@@ -21,7 +21,7 @@ when you use the new operator with a constructor function in JavaScript, it perf
 
 - Executing the constructor function with this bound to the new object: When the constructor function is invoked with new, the this keyword inside the constructor function refers to the newly created object. This allows you to assign properties and perform other operations on the new object within the constructor function.
 
-- Return of the new object: If the constructor function does not explicitly return an object, the new operator implicitly returns the newly created object. This ensures that the variable assigned with new ConstructorFunction() holds a reference to the newly created object.
+- Return of the `new` object: If the constructor function does not explicitly return an object, the new operator implicitly returns the newly created object. This ensures that the variable assigned with new ConstructorFunction() holds a reference to the newly created object.
 
 [References]
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new

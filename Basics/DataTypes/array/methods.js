@@ -39,3 +39,8 @@ console.log("reduceArr", reduceArr);
 // includes => check if the provided item is in the array & returns boolean
 const includes = arr.includes(3);
 console.log("includes=>", includes);
+
+// returns the index of the first element in an array that satisfies the provided testing function.
+// If no elements satisfy the testing function, -1 is returned.
+const findIndex = arr.findIndex((element) => element >= 3);
+console.log("FindIndex", findIndex);
