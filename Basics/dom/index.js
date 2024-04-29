@@ -13,3 +13,4 @@ divsWithClass.forEach((div) => (div.style.color = "red"));
 const input = document.querySelector("input[type='text']");
 const input2 = document.querySelector("body > input[type='text']");
 console.log(input)
+
