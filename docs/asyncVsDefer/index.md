@@ -1,4 +1,4 @@
 ## Async vs Defer
 
 
-<img src="../../assets/defer.png">
+<img src="../../assets/defer.png" width="500">
