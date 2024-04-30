@@ -8,6 +8,16 @@
   <script defer src="./basics/dom/data-attribute.js"></script>
   <script defer src="./basics/eventListeners/index.js"></script>
   <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #modal.open {
+      display: block;
+    }
+
+    #overlay.open {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <div data-test1>This is a data attribute</div>
@@ -23,5 +33,13 @@
   <button id="button2">Button Two</button>
 
   <button data-test="1234" data-test-two="" data-clicks="0">DataTest</button>
+
+  <button id="open-modal-btn">Open Modal</button>
+
+  <div id="overlay"></div>
+  <div id="modal">
+    <h3>This is a modal</h3>
+    <button id="close-modal-btn">Close Modal</button>
+  </div>
 </body>
 </html>
