@@ -9,13 +9,24 @@
 // }
 // show("first");
 
-function fib(n) {
-	if(n===1 || n ==2) {
-		return 1
-	}
-	return fib(n-1) + fib(n-2)
-}
+// TODO: call stack for recursive function
 
-console.log(fib(5))
+// function fib(n) {
+// 	if(n===1 || n ==2) {
+// 		return 1
+// 	}
+// 	return fib(n-1) + fib(n-2)
+// }
+
+// console.log(fib(5))
 
 // https://www.youtube.com/watch?v=LteNqj4DFD8
+
+function printNumber(number) {
+	if (number > 2) return;
+	console.log("entry", number)
+	printNumber(number + 1);
+	console.log("exiting",number);
+}
+
+printNumber(1)
