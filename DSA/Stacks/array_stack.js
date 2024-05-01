@@ -5,7 +5,7 @@
  */
 
 let letters = [];
-let word = "racecarr";
+let word = "racecar";
 
 let rword = "";
 
