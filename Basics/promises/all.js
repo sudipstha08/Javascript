@@ -1,11 +1,11 @@
 function TimeoutPromise() {
 	return new Promise((resolve, reject) => {
-		setTimeout(resolve, 100);
+		setTimeout(resolve("hi"), 100);
 	});
 }
 
 Promise.all([
-  TimeoutPromise,
+  TimeoutPromise(),
 	Promise.resolve("1"),
 	Promise.resolve("2"),
 	Promise.resolve("3"),

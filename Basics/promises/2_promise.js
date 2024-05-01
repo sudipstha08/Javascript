@@ -4,19 +4,20 @@ function setTimeoutPromise(duration) {
 	});
 }
 
-
 setTimeoutPromise(1000)
 	.then(() => {
 		console.log("here", 1);
+
 		return setTimeoutPromise(1000);
 	})
 	.then(() => {
 		console.log("2");
 		setTimeout(() => {
-			return Promise.resolve("hi");
+			return Promise.resolve("");
 		}, 2000);
 	})
 	.then(() => {
 		console.log("here", 5);
 	})
 	.catch((err) => console.log(err));
+console.log("sd", setTimeoutPromise(20));
