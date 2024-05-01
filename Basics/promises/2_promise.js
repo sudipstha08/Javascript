@@ -1,6 +1,6 @@
 function setTimeoutPromise(duration) {
 	return new Promise((resolve, reject) => {
-		setTimeout(resolve, duration);
+		setTimeout(() => resolve(duration), duration);
 	});
 }
 
@@ -20,4 +20,10 @@ setTimeoutPromise(1000)
 		console.log("here", 5);
 	})
 	.catch((err) => console.log(err));
+
 console.log("sd", setTimeoutPromise(20));
+
+// in promises are not chained like above all are executed in parallel
+for (let i = 0; i < 10; i++) {
+	setTimeoutPromise(i).then((value) => console.log(value));
+}
