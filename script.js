@@ -34,3 +34,30 @@ const closeModal = () => {
 closeModalButton.addEventListener("click", closeModal);
 
 overlay.addEventListener("click", closeModal);
+
+/**
+ * Event Delegation
+ */
+const eventButton = document.querySelector("#event");
+
+document.addEventListener(
+	"click",
+	() => {
+		console.log(" document clicked");
+	},
+	//capture is false by default
+	{ capture: true }
+);
+
+document.body.addEventListener(
+	"click",
+	() => {
+		console.log("body clicked");
+	},
+	{ capture: true }
+);
+
+eventButton.addEventListener("click", (e) => {
+	e.stopPropagation()
+	console.log("button clicked");
+});
