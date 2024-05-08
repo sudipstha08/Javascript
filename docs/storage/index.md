@@ -1,0 +1,11 @@
+## Storage
+- browser and device specific
+- cookies
+  - 4kb
+  - client and server
+- local storage
+  - 10MB
+  - client
+- session storage
+  - 5MB
+  - client
