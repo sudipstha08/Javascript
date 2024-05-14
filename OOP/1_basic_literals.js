@@ -14,7 +14,7 @@ const book2 = {
 	year: "2023",
 	getSummary: function () {
 		return `${this.title} was written by ${this.author}`;
-	},
+	}
 };
 
 console.log(Object.values(book))

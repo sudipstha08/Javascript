@@ -1,10 +1,9 @@
 /**
- *
- * In JavaScript, every object has a prototype. The prototype is an internal reference that points
- * to another object. When you attempt to access a property or method on an object,
+ * In JavaScript, every object has a prototype.
+ * The prototype is an internal reference that points to another object.
+ * When you attempt to access a property or method on an object,
  * and that property or method doesn't exist on the object itself, JavaScript will
  * look for it on the object's prototype. This process is known as prototype chain lookup.
- *
  */
 function Book(title, author, year) {
 	this.title = title;
@@ -35,6 +34,5 @@ console.log(book2);
 console.log(book2.getAge());
 book2.revise("2020");
 console.log("bookl", book2);
-
 
 // https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
