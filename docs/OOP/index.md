@@ -6,6 +6,10 @@
 In object-oriented programming, an instance is a concrete realization of a class. When you define a class, you're essentially creating a blueprint. An instance, then, is an object built from that blueprint. It has all the characteristics defined in the class, but with specific values.
 
 ## Main principles of OOP
+- encapsulation
+- abstraction
+- inheritance
+- polymorphism
 
 ### Encapsulation
 
