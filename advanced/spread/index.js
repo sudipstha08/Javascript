@@ -16,7 +16,12 @@ console.log(mergedObj); // Output: { x: 1, y: 2, z: 3 }
 
 // Rest parameter in function definition
 function sum(...numbers) {
+	console.log("numbers=>",numbers)
 	return numbers.reduce((acc, num) => acc + num, 0);
 }
 console.log(sum(1, 2, 3)); // Output: 6
 console.log(sum(1, 2, 3, 4, 5)); // Output: 15
+
+// creates a new array
+const newArray = [...numbers]
+const [first, ...rest] = numbers

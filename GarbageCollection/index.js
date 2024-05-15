@@ -1,9 +1,11 @@
 /**
  * Garbage collection (GC) is a form of automatic memory management. 
- * The garbage collector attempts to reclaim memory which was allocated by the program, but is no longer referenced; such memory is called garbage. 
+ * The garbage collector attempts to reclaim memory which was allocated by the program, 
+ * but is no longer referenced; such memory is called garbage. 
  * Garbage collection relieves the programmer from doing manual memory management, 
  * where the programmer specifies what objects to de-allocate and return to the memory system and when to do so.
- * Garbage Collection is process of reclaiming the runtime unused memory automatically. In other words, it is a way to destroy the unused objects.
+ * Garbage Collection is process of reclaiming the runtime unused memory automatically. 
+ * In other words, it is a way to destroy the unused objects.
  * 
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management
  */
