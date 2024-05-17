@@ -1,4 +1,6 @@
-// The Map object is a built-in data structure in JavaScript that allows you to store key-value pairs where both keys and values can be of any data type.
+// The Map object is a built-in data structure in JavaScript that allows you to 
+// store key-value pairs where both keys and values can be of any data type.
+// The garbage collector doesn’t remove a key pointer from “Map” and also doesn’t remove the key from memory.
 const user = { name: "mike" };
 
 const map = new Map([
