@@ -3,6 +3,8 @@
  * references (point to the same underlying values) as those of the source
  * object from which the copy was made. As a result, when you change
  * either the source or the copy, you may also cause the other object to change too.
+ * 
+ * standard built-in object-copy operations (spread syntax, Array.prototype.concat(), Array.prototype.slice(), Array.from(), and Object.assign()) create shallow copies
  */
 
 const ingredientsList = ["noodles", { list: ["eggs", "flour", "water"] }];
