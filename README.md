@@ -19,7 +19,7 @@
 - https://javascript.info/
 - https://www.freecodecamp.org/news/regular-vs-arrow-functions-javascript
 - https://www.w3schools.com/js/default.asp
-- https://javascript.info/
+- https://devdocs.io/javascript/
 
 
 ## JS Challenges
